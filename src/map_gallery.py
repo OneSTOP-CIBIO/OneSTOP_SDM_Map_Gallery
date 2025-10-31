@@ -7,8 +7,8 @@
 import os, re, json
 from urllib.parse import quote  # for GBIF URL encoding
 
-INPUT_DIR = "C:/Users/JG/Desktop/_maps_onestop_v02_crop/"
-OUTPUT_HTML = "C:/Users/JG/Desktop/_maps_onestop_v02_crop/index.html"
+INPUT_DIR = "C:/MyFiles/R-dev/OneSTOP_Outputs/OneSTOP_SDM_Map_Gallery/imgs"
+OUTPUT_HTML = "C:/MyFiles/R-dev/OneSTOP_Outputs/OneSTOP_SDM_Map_Gallery/index.html"
 
 pat = re.compile(
     r"^sdm_map_([a-z]+_[a-z]+)__((hist)_bin_|(\d{4}_\d{4})_(ssp(?:126|370|585))_bin_)\.png$"
@@ -53,7 +53,7 @@ for fname in sorted(os.listdir(INPUT_DIR)):
     entry = {
         "id": fname,
         "file": fname,
-        "path": fname,
+        "path": f"imgs/{fname}", # fname,
         "species_token": species_token,
         "species": species_display,
         "gbif": gbif_url,
@@ -126,8 +126,18 @@ TEMPLATE = """<!doctype html>
   .card:hover { transform: translateY(-3px); box-shadow: 0 16px 28px rgba(0,0,0,0.28); }
   .card img { width: 100%; height: 220px; object-fit: cover; display: block; background: #0b1220; }
   .meta { padding: 12px 14px 14px; display: grid; gap: 6px; }
-  .sp a { font-weight: 600; color: var(--text); text-decoration: none; }
-  .sp a:hover { text-decoration: underline; color: var(--accent); }
+
+  .sp a {
+  font-weight: 600;
+  font-style: italic;   /* <-- NEW */
+  color: var(--text);
+  text-decoration: none;
+  }
+  .sp a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+  }
+
   .row { font-size: 13px; color: var(--muted); display:flex; gap:8px; flex-wrap:wrap; }
   .chip { background: var(--chip); border: 1px solid #293447; padding: 4px 8px; border-radius: 999px; font-size: 12px; }
   .empty { text-align:center; color: var(--muted); padding: 24px; grid-column: 1/-1; }
@@ -184,8 +194,9 @@ TEMPLATE = """<!doctype html>
 </head>
 <body>
 <header>
-  <h1>Species Distribution Map Gallery</h1>
-  <p class="sub">Click any thumbnail to view a larger map. Use ESC or the × button to close; use ← → to navigate.</p>
+  <h1>OneSTOP | IAS Distribution Model Map Gallery</h1>
+   <p class="sub">Click any thumbnail to view a larger map. Use ESC or the × button to close; use ← → to navigate.</p>
+   <p class="sub">Green areas represent potential distribution with suitable climate/land cover conditions</p>
 </header>
 
 <section class="controls">
