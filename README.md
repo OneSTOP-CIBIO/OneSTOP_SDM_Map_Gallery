@@ -74,8 +74,7 @@ These maps indicate *potential suitability* rather than confirmed presence or li
 
 ## 📚 References
 
-**Chen, G.**, **Li, X.**, & **Liu, X.** (2022).  
-*Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios*. **Scientific Data**, 9, 125. [https://doi.org/10.1038/s41597-022-01208-6](https://www.nature.com/articles/s41597-022-01208-6)
+**Chen, G.**, **Li, X.**, & **Liu, X.** (2022). *Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios*. **Scientific Data**, 9, 125. [https://doi.org/10.1038/s41597-022-01208-6](https://www.nature.com/articles/s41597-022-01208-6)
 
 **Davis, A. J. S.**, **Groom, Q.**, **Adriaens, T.**, **Vanderhoeven, S.**, **De Troch, R.**, **Oldoni, D.**, **Desmet, P.**, **Reyserhove, L.**, **Lens, L.**, & **Strubbe, D.** (2024). *Reproducible WiSDM: a workflow for reproducible invasive alien species risk maps under climate change scenarios using standardized open data*. **Frontiers in Ecology and Evolution**, 12, 1148895. [https://doi.org/10.3389/fevo.2024.1148895](https://doi.org/10.3389/fevo.2024.1148895)
 

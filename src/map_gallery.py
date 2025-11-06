@@ -197,6 +197,7 @@ TEMPLATE = """<!doctype html>
   <h1>OneSTOP | IAS Distribution Model Map Gallery</h1>
    <p class="sub">Click any thumbnail to view a larger map. Use ESC or the × button to close; use ← → to navigate.</p>
    <p class="sub">Green areas represent potential distribution with suitable climate/land cover conditions</p>
+   <p class="sub">Blue squares show 20 × 20 km areas with presence records from GBIF used to train models</p>
 </header>
 
 <section class="controls">
