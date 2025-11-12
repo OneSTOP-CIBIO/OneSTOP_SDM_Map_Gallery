@@ -190,15 +190,66 @@ TEMPLATE = """<!doctype html>
   }
   .modal .prev { left: 8px; }
   .modal .next { right: 8px; }
+
+  /* Header layout with logo */
+  .header-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .header-text {
+    flex: 1;
+  }
+
+  /* Footer */
+footer {
+  background: #0c1320;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 24px 12px 40px;
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 180px;
+  margin: 12px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
 </style>
 </head>
 <body>
+
+
 <header>
-  <h1>OneSTOP | IAS Distribution Model Map Gallery</h1>
-   <p class="sub">Click any thumbnail to view a larger map. Use ESC or the × button to close; use ← → to navigate.</p>
-   <p class="sub">Green areas represent potential distribution with suitable climate/land cover conditions</p>
-   <p class="sub">Blue squares show 20 × 20 km areas with presence records from GBIF used to train models</p>
+  <div class="header-container">
+    <img src="ONESTOP logo_vertical_res_w200.png" alt="OneSTOP logo" class="logo">
+    <div class="header-text">
+      <h1>IAS Distribution Model Map Gallery</h1>
+      <p class="sub">Click any thumbnail to view a larger map. Use ESC or the × button to close; use ← → to navigate.</p>
+      <p class="sub">Green areas represent potential distribution with suitable climate/land cover conditions</p>
+      <p class="sub">Blue squares show 20 × 20 km areas with presence records from GBIF used to train models</p>
+    </div>
+  </div>
 </header>
+
 
 <section class="controls">
   <div class="control">
@@ -407,6 +458,18 @@ function render() {
 
 render();
 </script>
+
+
+<footer>
+  <p>© 2025 — Developed under the OneSTOP Project</p>
+  <img src="eu_funded_en.png" alt="EU Funded logo">
+  <p>
+    OneSTOP receives funding from the European Union Horizon Europe Research and Innovation Programme (ID No 101180559).<br>
+    Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA).<br>
+    Neither the EU nor REA can be held responsible for them.
+  </p>
+</footer>
+
 </body>
 </html>
 """
