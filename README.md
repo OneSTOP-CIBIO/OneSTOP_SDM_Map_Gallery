@@ -3,6 +3,13 @@
 
 # Invasive Alien Species Distribution Map Gallery
 
+### ⚠️ Important notice 
+
+> This map gallery presents species distribution models that are currently undergoing revision and improvement using the latest version of the modelling workflow developed in OneSTOP. As such, the maps provided here are preliminary and may not reflect the most up-to-date or accurate distributions.
+> They are made available solely for visualization and general reference purposes and should not be used for scientific analysis, decision-making, or management actions. Updated and validated versions will be released upon completion of the revision process.
+
+
+----
 
 This gallery presents **potential distribution maps** of *Invasive Alien Species (IAS)* obtained from **Species Distribution Models (SDMs)** developed using the [**wiSDM framework**](https://github.com/trias-project/risk-modelling-and-mapping) adapted to the [**OneSTOP**](https://onestop-project.eu/) project. 
 A fork of the original wiSDM framework (in R code) is being developed [here](https://github.com/OneSTOP-CIBIO/risk-modelling-and-mapping).
