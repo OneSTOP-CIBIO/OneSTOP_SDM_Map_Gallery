@@ -10,7 +10,7 @@ def process_images(input_dir, output_dir, disclaimer_text, version, ref_date, fo
     """
     os.makedirs(output_dir, exist_ok=True)
         
-    full_disclaimer = f"{disclaimer_text} | Version: {version} | Ref Date: {ref_date}"
+    full_disclaimer = f"{disclaimer_text} | Version: {version} | Reference date: {ref_date}"
     
     # Try to load a default TrueType font, otherwise fallback to default PIL font
     try:
