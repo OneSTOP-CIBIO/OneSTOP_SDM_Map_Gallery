@@ -5,7 +5,7 @@
 
 ### ⚠️ Important notice 
 
-> This map gallery presents species distribution models that are currently undergoing revision and improvement using the latest version of the modelling workflow developed in OneSTOP. As such, the maps provided here are preliminary and may not reflect the most up-to-date or accurate distributions.
+This map gallery presents species distribution models that are currently being revised and improved using the latest version of the modelling workflow developed in OneSTOP. As such, the maps provided here are preliminary and may not reflect the most up-to-date or accurate distributions.
 > They are made available solely for visualization and general reference purposes and should not be used for scientific analysis, decision-making, or management actions. Updated and validated versions will be released upon completion of the revision process.
 
 
@@ -50,7 +50,7 @@ These scenarios represent low-, medium-, and high-emission futures and follow th
 
 CHELSA v2.1 bioclimatic projections for 2070 and 2100 are available for five CMIP6 Global Circulation Models (GCMs): *GFDL-ESM4*, *UKESM1-0-LL*, *MPI-ESM1-2-HR*, *IPSL-CM6A-LR*, and *MRI-ESM2-0*, representing diverse modeling frameworks and spatial resolutions to capture a broad range of climate variability and uncertainty. 
 
-To ensure consistency with land-cover projections under matching SSP/RCP scenarios, climate data from the five GCMs were averaged to produce a single ensemble mean. This ensemble approach aims to reduce individual model biases and provides a more robust representation of future climatic conditions required for integration with land-cover scenarios from *Chen et al. (2022)*.
+To ensure consistency with land-cover projections under matching SSP/RCP scenarios, climate data from the five GCMs were averaged to produce a single ensemble mean. This ensemble approach aims to reduce individual model biases and to provide a more robust representation of future climatic conditions, which is required for integration with land-cover scenarios from *Chen et al. (2022)*.
 
 
 ## ⚠️ Interpretation and limitations
@@ -71,7 +71,7 @@ These maps represent potential habitat suitability, not confirmed presence or ac
    Different modeling algorithms make distinct assumptions about response curves regarding species-environment relations, extrapolation, and variable interactions; even ensemble approaches cannot eliminate this source of variability.
 
 4. **Thresholding and binarization**  
-   Transforming continuous suitability into binary presence/absence introduces additional uncertainty regarding habitat limits. In our case we opted to maximize both sensitivity and specificity when deciding about thresholds.
+   Transforming continuous suitability into binary presence/absence introduces additional uncertainty regarding habitat limits. In our case, we opted to maximise both sensitivity and specificity when deciding on thresholds.
 
 5. **Dispersal and biotic interactions**  
    The models do not account for dispersal limitations, species interactions, adaptation, or management interventions, all of which affect real-world distributions.
@@ -97,6 +97,17 @@ This gallery is implemented as a **static HTML interface** using Python, HTML, a
 It provides dropdown filters to explore species, time periods, and socio-climatic scenarios, with interactive lightbox previews for each map. This is not an interactive webGIS tool; therefore, map layers cannot be toggled, and pan or zoom functions are not available.
 
 Each species name links to its **GBIF** search page for quick reference.
+
+
+## TODO
+
+- Update the gallery generation code to the wiSDM 2.0 framework
+
+- Change country basemap from NaturalEarth to GADM
+
+- Regenerate and publish the gallery with new model outputs
+
+- Improve and update all documentation
 
 
 ## Citation
